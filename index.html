@@ -82,7 +82,8 @@
     border-bottom: 1px solid var(--border); padding-top: 14px;
   }
   .brandrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
-  .title { font-size: 26px; }
+  .title { font-size: clamp(19px, 6.4vw, 26px); white-space: nowrap; }
+  .title .sub { white-space: normal; }
   .title .sub { display: block; font-size: 12px; letter-spacing: .16em; color: var(--muted); font-weight: 700; margin-top: 4px; }
   .clockbox { text-align: right; flex-shrink: 0; }
   .clock { font-size: 30px; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: .01em; }
@@ -325,7 +326,7 @@
     <div class="brandrow">
       <div>
         <div class="eyebrow">Country High · Crew</div>
-        <div class="title display">Dance<br>Fever '27
+        <div class="title display">Dance Fever '27
           <span class="sub">Running Order · Alte Reithalle Thun</span>
         </div>
       </div>
